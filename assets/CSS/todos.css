@@ -1,0 +1,9 @@
+#container {
+  border: gray 2px solid;
+  width:360px;
+  margin: 0 auto;
+}
+.strikeout {
+  text-decoration: line-through;
+  color: gray;
+}
