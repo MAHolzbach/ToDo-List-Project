@@ -17,14 +17,42 @@
       <input type="text" placeholder="Add to-do..."/>
       <ul>
         <li><span class="trash"><i class="fa fa-trash" aria-hidden="true"></i>
-        </span> Item 1</li>
+        </span><span class="itemText"> Item 1</span></li>
         <li><span class="trash"><i class="fa fa-trash" aria-hidden="true"></i>
-        </span> Item 2</li>
+        </span><span class="itemText"> Item 2</li>
         <li><span class="trash"><i class="fa fa-trash" aria-hidden="true"></i>
-        </span> Item 3</li>
+        </span><span class="itemText"> Item 3</li>
         <li><span class="trash"><i class="fa fa-trash" aria-hidden="true"></i>
-        </span> Item 4</li>
+        </span><span class="itemText"> Item 4</li>
       </ul>
+    </div>
+
+    <div id="tracker">
+      <h1>Totals</h1>
+      <table>
+        <tr>
+          <td>
+            Items added
+          </td>
+          <td>
+            Completed
+          </td>
+          <td>
+            Deleted
+          </td>
+        </tr>
+        <tr>
+          <td id="added">
+            0
+          </td>
+          <td id="done">
+            0
+          </td>
+          <td id="deleted">
+            0
+          </td>
+        </tr>
+      </table>
     </div>
 
     <script type="text/javascript" src="assets/JS/todos.js"></script>
