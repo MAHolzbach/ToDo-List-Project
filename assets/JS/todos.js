@@ -2,13 +2,17 @@ var doneIndex = 0;
 var deleteIndex = 1;
 var addIndex = 1;
 
-$("ul").on("click", "li", function(){
-  if($(this).hasClass("strikeout")) {
+$("ul").on("click", function(e){
+  var target = $(e.target);
+  if(target.hasClass("fa-trash")) {
+    return;
+  } else if(target.hasClass("strikeout")){
     doneIndex--;
+    target.toggleClass("strikeout");
   } else {
+    target.toggleClass("strikeout");
     doneIndex++;
   }
-  $(this).toggleClass("strikeout");
   $("#done").html(doneIndex);
 });
 
